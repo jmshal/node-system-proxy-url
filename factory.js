@@ -37,9 +37,9 @@ function factory(interface, parseProxyUrl) {
   }
 
   return {
-    getProxyUrl,
-    getProxyUrlSync,
-    getProxyUrlAsync,
+    getProxyUrl: getProxyUrl,
+    getProxyUrlSync: getProxyUrlSync,
+    getProxyUrlAsync: getProxyUrlAsync,
   };
 }
 
