@@ -25,7 +25,7 @@ function factory(interface, parseProxyUrl) {
   }
 
   function getProxyUrlAsync(url) {
-    return new Promise((resolve, reject) => {
+    return new Promise(function (resolve, reject) {
       getProxyUrl(url, function(err, proxyUrl) {
         if (err) {
           reject(err);
