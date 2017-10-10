@@ -1,0 +1,8 @@
+{
+  "name": "system-proxy-url",
+  "version": "0.0.0",
+  "dependencies": {
+    "macos-system-proxy-settings": "^0.1.2",
+    "windows-system-internet-settings": "^0.1.0"
+  }
+}
