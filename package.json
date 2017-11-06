@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "dependencies": {
     "macos-system-proxy-settings": "^0.1.2",
+    "proxy-from-env": "^1.0.0",
     "windows-system-internet-settings": "^0.1.0"
   }
 }

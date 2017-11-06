@@ -1,5 +1,6 @@
 var macos = require('./macos');
 var windows = require('./windows');
+var linux = require('./linux');
 
 function merge(base, obj) {
   var hasOwn = Object.prototype.hasOwnProperty;
@@ -22,6 +23,10 @@ switch (process.platform) {
     defaults = windows;
     break;
   }
+  case 'linux': {
+    defaults = linux;
+    break;
+  }
   default: {
     console.warn('Unknown platform "' + process.platform + '", unable to provide proxy url.');
     break;
@@ -31,3 +36,4 @@ switch (process.platform) {
 merge(exports, defaults);
 exports.macos = macos;
 exports.windows = windows;
+exports.linux = linux;

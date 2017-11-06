@@ -28,7 +28,9 @@ function parseProxyUrl(settings, url) {
   var prefix = type.toUpperCase(); // "http" -> "HTTP" (settings are uppercased)
   var server = settings[prefix + 'Proxy'];
   var port = settings[prefix + 'Port'];
-  var proxyUrl = server + ':' + port;
+  port = port ? ':' + port : '';
+  var scheme = type + '://';
+  var proxyUrl = scheme + server + port;
   return proxyUrl;
 }
 
